@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patrick Hand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press Start 2P">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Luckiest Guy">
+    <link rel="stylesheet" href="projekt.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box1">
+        <li class="rock">✊</li>
+        <li class="paper">✋</li>
+        <li class="scissor">✌️</li>
+        <li class="rock">✊</li>
+        <li class="paper">✋</li>
+        <li class="scissor">✌️</li>
+    </div>
+    <div class="box2">
+        <li class="rock">✊</li>
+        <li class="paper">✋</li>
+        <li class="scissor">✌️</li>
+        <li class="rock">✊</li>
+        <li class="paper">✋</li>
+        <li class="scissor">✌️</li>
+    </div>
+
+    <header>
+
+        <h1>Rock, paper, scissor</h1>
+    </header>
+
+    <aside id="aside1"></aside>
+    <aside id="aside2"></aside>
+    
+
+    <main>
+        <div class="score">
+            <p id="playerName">Player</p>
+            <p id="playerScore">0</p>
+            <p>:</p>
+            <p id="computerScore">0</p>
+            <p>Computer</p>
+        </div>
+        <div class="game-window">
+            <div id="enterName" style="visibility: visible;">
+                <div id="changeName">Enter name</div>
+                <form id="nameHolder">
+                    <label for="Playername" id="nameBox">
+                        <input type="text" id="playername" placeholder="Player name" name="Playername" required>
+                    </label>
+                    <button type="submit" id="okButton">OK</button>
+                </form>
+            </div>
+
+            <div id="playerChoice" style="visibility: hidden;">
+                <button id="playerPickRock" class="selection">✊</button>
+                <button id="playerPickPaper"class="selection">✋</button>
+                <button id="playerPickScissor" class="selection">✌️</button>
+            </div>
+
+            <div id="displayResult" style="visibility: hidden;">
+                <div id="spelare"></div>
+                <div id="dator"></div>
+            </div>
+
+            <div id="youWon" style="visibility: hidden;">
+                <h1 id="youWonText">YOU WON!</h1>
+                <div id="playAgain">
+                    <button id="tryAgain">Try again?</button>
+                    <button id="noThanks"> No thanks</button>
+                </div>
+            </div>
+
+            <div id="compWon" style="visibility: hidden;">
+                <h1>COMPUTER WON!</h1>
+                <div id="playAgain">
+                    <button id="tryAgainComp">Try again?</button>
+                    <button id="noThanksComp"> No thanks</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+        <div id="rules">
+            Rules: The game is a best of 3 set up where you play against the computer. You and the computer will pick
+            you choice at the same time and the winner will declared after you choice is made.
+            Rock beats scissors, scissors beats paper and paper beats rock. Good luck!
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+
+
